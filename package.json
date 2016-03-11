@@ -1,0 +1,28 @@
+{
+  "name": "mob-slackbot",
+  "version": "4.0.0",
+  "description": "Bot integrated with Slack to automate the most common management tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobyourlife/v4-slackbot.git"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "management",
+    "tasks",
+    "invisible",
+    "ui",
+    "chat"
+  ],
+  "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mobyourlife/v4-slackbot/issues"
+  },
+  "homepage": "https://github.com/mobyourlife/v4-slackbot#readme"
+}
