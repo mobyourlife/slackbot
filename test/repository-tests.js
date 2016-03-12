@@ -27,7 +27,7 @@ describe('Repository tests', function () {
   it('should get the reference of the added message', function (done) {
     let data = {
       username: 'foo',
-      date: Date.now(),
+      date: new Date(),
       message: 'lorem ipsum'
     }
 

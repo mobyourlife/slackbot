@@ -35,4 +35,40 @@ describe('Messenger tests', function () {
 
     done()
   })
+
+  it('should get the reference of the received message', function (done) {
+    let data = {
+      username: 'foo',
+      date: new Date(),
+      message: 'lorem ipsum'
+    }
+
+    let msg = new Messenger()
+    let added = msg.Receive(data.username, data.date, data.message)
+
+    expect(added).to.be.ok()
+    expect(added.username).to.be(data.username)
+    expect(added.date).to.be(data.date)
+    expect(added.message).to.be(data.message)
+
+    done()
+  })
+
+  it('should get the reference of the sent message', function (done) {
+    let data = {
+      username: 'foo',
+      date: new Date(),
+      message: 'lorem ipsum'
+    }
+
+    let msg = new Messenger()
+    let added = msg.Send(data.username, data.date, data.message)
+
+    expect(added).to.be.ok()
+    expect(added.username).to.be(data.username)
+    expect(added.date).to.be(data.date)
+    expect(added.message).to.be(data.message)
+
+    done()
+  })
 })
