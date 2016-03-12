@@ -7,7 +7,7 @@ var bot = new ProtoBot()
 // inicializa o repl
 const repl = require('repl')
 
-const server = repl.start({
+repl.start({
   prompt: ' > ',
   eval: callBot
 })
