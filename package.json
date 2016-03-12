@@ -4,6 +4,7 @@
   "description": "Bot integrated with Slack to automate the most common management tasks.",
   "main": "index.js",
   "scripts": {
+    "start": "node bin/service.js",
     "test": "npm run test:lint && npm run test:istanbul",
     "test:lint": "standard",
     "test:mocha": "mocha test/*",
@@ -33,5 +34,8 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "standard": "^6.0.8"
+  },
+  "dependencies": {
+    "@slack/client": "^2.1.0"
   }
 }
