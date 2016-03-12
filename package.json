@@ -4,7 +4,9 @@
   "description": "Bot integrated with Slack to automate the most common management tasks.",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "npm run test:lint && npm run test:mocha",
+    "test:lint": "standard",
+    "test:mocha": "mocha test/*"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
   },
   "homepage": "https://github.com/mobyourlife/v4-slackbot#readme",
   "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5",
     "standard": "^6.0.8"
   }
 }
