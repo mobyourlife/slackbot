@@ -26,10 +26,22 @@ describe('Repository tests', function () {
 
   it('should not take anything from an empty repository', function (done) {
     let repo = new Repository()
-    let item = repo.Pop()
+    let item = repo.Take()
 
     expect(repo.Count()).to.be(0)
     expect(item).not.to.be.ok()
+
+    done()
+  })
+
+  it('should remove message from repository after taking it', function (done) {
+    let repo = new Repository()
+    repo.Push('foo', new Date(), 'lorem ipsum')
+
+    let item = repo.Take()
+
+    expect(repo.Count()).to.be(0)
+    expect(item).to.be.ok()
 
     done()
   })
@@ -44,12 +56,9 @@ describe('Repository tests', function () {
     let repo = new Repository()
     repo.Push(data.username, data.date, data.message)
 
-    let item = repo.Pop()
-
-    expect(repo.Count()).to.be(1)
+    let item = repo.Take()
 
     expect(item).to.be.ok()
-    // expect(item).to.be.a(Repository)
     expect(item.username).to.be(data.username)
     expect(item.date).to.be(data.date)
     expect(item.message).to.be(data.message)
