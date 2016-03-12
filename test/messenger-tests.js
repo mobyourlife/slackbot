@@ -28,7 +28,7 @@ describe('Messenger tests', function () {
 
   it('should send a message', function (done) {
     let msg = new Messenger()
-    msg.Send('foo', new Date(), 'lorem ipsum')
+    msg.Send('foo', 'lorem ipsum')
 
     expect(msg.CountSent()).to.be(1)
     expect(msg.CountReceived()).to.be(0)
@@ -57,16 +57,15 @@ describe('Messenger tests', function () {
   it('should get the reference of the sent message', function (done) {
     let data = {
       username: 'foo',
-      date: new Date(),
       message: 'lorem ipsum'
     }
 
     let msg = new Messenger()
-    let added = msg.Send(data.username, data.date, data.message)
+    let added = msg.Send(data.username, data.message)
 
     expect(added).to.be.ok()
     expect(added.username).to.be(data.username)
-    expect(added.date).to.be(data.date)
+    expect(added.date).to.be.ok()
     expect(added.message).to.be(data.message)
 
     done()
