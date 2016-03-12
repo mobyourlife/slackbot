@@ -12,7 +12,7 @@ const token = process.env.SLACK_TOKEN
 
 // inicializa o slack bot
 const rtm = new RtmClient(token, {
-  // logLevel: 'debug'
+  logLevel: 'debug'
 })
 
 // escuta as mensagens enviadas para o bot
