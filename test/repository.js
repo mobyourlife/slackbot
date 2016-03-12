@@ -24,6 +24,24 @@ describe('Repository tests', function () {
     done()
   })
 
+  it('should get the reference of the added message', function (done) {
+    let data = {
+      username: 'foo',
+      date: Date.now(),
+      message: 'lorem ipsum'
+    }
+
+    let repo = new Repository()
+    let added = repo.Push(data.username, data.date, data.message)
+
+    expect(added).to.be.ok()
+    expect(added.username).to.be(data.username)
+    expect(added.date).to.be(data.date)
+    expect(added.message).to.be(data.message)
+
+    done()
+  })
+
   it('should not take anything from an empty repository', function (done) {
     let repo = new Repository()
     let item = repo.Take()
