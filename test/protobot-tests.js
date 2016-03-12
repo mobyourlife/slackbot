@@ -1,9 +1,20 @@
 /* global describe, it */
 
-'use strict';
+'use strict'
 
-const ProboBot = require('./lib/protobot')
+const ProtoBot = require('../lib/protobot')
+
+const expect = require('expect.js')
 
 describe('Testes do ProtoBot', function () {
-  it('')
+  describe('Saudações básicas', function () {
+    it('olá', function (done) {
+      let bot = new ProtoBot()
+      let answer = bot.talk('olá')
+
+      expect(answer).to.be('Olá! Em que posso ajudá-lo?')
+
+      done()
+    })
+  })
 })
