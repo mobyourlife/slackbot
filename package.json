@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/mobyourlife/v4-slackbot/issues"
   },
-  "homepage": "https://github.com/mobyourlife/v4-slackbot#readme"
+  "homepage": "https://github.com/mobyourlife/v4-slackbot#readme",
+  "devDependencies": {
+    "standard": "^6.0.8"
+  }
 }
