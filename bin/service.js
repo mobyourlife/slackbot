@@ -11,7 +11,7 @@ const token = process.env.SLACK_TOKEN
 const msg = new Messenger()
 
 const rtm = new RtmClient(token, {
-  //logLevel: 'debug'
+  // logLevel: 'debug'
 })
 
 rtm.on(RTM_EVENTS.MESSAGE, (data) => {
