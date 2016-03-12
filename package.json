@@ -36,6 +36,7 @@
     "standard": "^6.0.8"
   },
   "dependencies": {
-    "@slack/client": "^2.1.0"
+    "@slack/client": "^2.1.0",
+    "levenshtein": "^1.0.5"
   }
 }

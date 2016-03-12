@@ -26,7 +26,16 @@ describe('Testes do ProtoBot', function () {
       done()
     })
 
-    it('o proto bot não entende tudo', function (done) {
+    it('o proto bot se esforça para lhe entender', function (done) {
+      let bot = new ProtoBot()
+      let answer = bot.talk('té mais')
+
+      expect(answer).to.be('Estarei sempre a sua disposição!')
+
+      done()
+    })
+
+    it('o proto bot não consegue entender tudo', function (done) {
       let bot = new ProtoBot()
       let answer = bot.talk('Rawr rawr rawr')
 
