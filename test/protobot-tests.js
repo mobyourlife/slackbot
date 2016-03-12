@@ -16,5 +16,14 @@ describe('Testes do ProtoBot', function () {
 
       done()
     })
+
+    it('até mais', function (done) {
+      let bot = new ProtoBot()
+      let answer = bot.talk('até mais')
+
+      expect(answer).to.be('Estarei sempre a sua disposição!')
+
+      done()
+    })
   })
 })
