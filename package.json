@@ -1,7 +1,7 @@
 {
   "name": "mob-slackbot",
   "version": "4.0.0",
-  "description": "Bot integrated with Slack to automate the most common management tasks.",
+  "description": "Bot integrado com Slack para automatizar tarefas comuns de gerenciamento.",
   "main": "index.js",
   "scripts": {
     "start": "node bin/service.js",

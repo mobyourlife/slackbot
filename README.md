@@ -2,11 +2,7 @@
 
 [![Travis Build][travis-image]][travis-url]
 
-Bot integrated with Slack to automate the most common management tasks.
-
-# Roles
- * Be ready all the time in Slack.
- * Get and print the services status.
+Bot integrado com Slack para automatizar tarefas comuns de gerenciamento.
 
 # License
 Apache 2.0.
