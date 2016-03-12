@@ -4,7 +4,7 @@
   "description": "Bot integrado com Slack para automatizar tarefas comuns de gerenciamento.",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/service.js",
+    "start": "node bin/repl.js",
     "test": "npm run test:lint && npm run test:istanbul",
     "test:lint": "standard",
     "test:mocha": "mocha test/*",
