@@ -16,9 +16,7 @@ describe('Testes do Clasificador', function () {
 
     expect(me.action).to.be('instalar')
 
-    expect(me.terms).to.be.an('array')
-    expect(me.terms.length).to.be(1)
-    expect(me.terms[0]).to.be('slack')
+    expect(me.terms).to.be('slack')
 
     done()
   })

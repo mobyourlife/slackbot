@@ -48,7 +48,7 @@ describe('Testes do ProtoBot', function () {
       let bot = new ProtoBot()
       let answer = bot.talk('Rawr rawr rawr')
 
-      expect(answer).to.be('Me desculpe, não entendi!')
+      expect(answer).to.be('Desculpe, não entendi!')
 
       done()
     })
