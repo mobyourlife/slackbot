@@ -11,7 +11,7 @@ describe('Action tests', function () {
     let bot = new ProtoBot()
     let answer = bot.talk('consultar status')
 
-    expect(answer).to.be('Ok, vou verificar!')
+    expect(answer).to.be('Vixi, nem sei! Assim que souber te aviso!')
 
     done()
   })
