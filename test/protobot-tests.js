@@ -53,15 +53,4 @@ describe('Testes do ProtoBot', function () {
       done()
     })
   })
-
-  describe('Comandos básicos', function () {
-    it('status', function (done) {
-      let bot = new ProtoBot()
-      let answer = bot.talk('status')
-
-      expect(answer).to.be('Desculpe, ainda não sei consultar os status!')
-
-      done()
-    })
-  })
 })
